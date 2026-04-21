@@ -1,0 +1,136 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* BACKGROUND */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4f46e5, #9333ea);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* MAIN CONTAINER */
+.container {
+  width: 90%;
+  max-width: 800px;
+  padding: 25px;
+  border-radius: 20px;
+
+  /* glass effect */
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+
+  color: white;
+}
+
+/* HEADER */
+.container h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* SECTION SPACING */
+.section {
+  margin-top: 25px;
+}
+
+/* INPUTS */
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+input::placeholder {
+  color: #ddd;
+}
+
+/* BUTTONS */
+button {
+  margin-top: 12px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: white;
+
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* LOGOUT BUTTON */
+.logout {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+
+/* POSTS GRID */
+.posts {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+/* POST CARD */
+.post-card {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+
+  transition: 0.3s;
+}
+
+.post-card:hover {
+  transform: scale(1.02);
+}
+
+/* POST TEXT */
+.post-card h4 {
+  margin-bottom: 5px;
+}
+
+.post-card p {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* ACTION BUTTONS */
+.actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.actions button {
+  flex: 1;
+}
+
+/* EDIT BUTTON */
+.actions button:first-child {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+}
+
+/* DELETE BUTTON */
+.actions button:last-child {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+}
